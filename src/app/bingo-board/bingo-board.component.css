@@ -1,0 +1,30 @@
+.bingo-board {
+    display: grid;
+    gap: 10px;
+  }
+  
+  .bingo-row {
+    display: flex;
+  }
+  
+  .bingo-cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 2px solid #000;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .bingo-cell:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .bingo-cell:active {
+    transform: scale(0.95);
+  }
+  

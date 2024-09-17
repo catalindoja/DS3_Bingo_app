@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BingoBoardComponent } from './bingo-board/bingo-board.component';
 
 @Component({
   selector: 'app-root',
