@@ -8,7 +8,7 @@ describe('BingoBoardComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [BingoBoardComponent]
+      declarations: [BingoBoardComponent]
     })
     .compileComponents();
 

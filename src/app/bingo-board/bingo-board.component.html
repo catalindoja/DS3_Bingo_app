@@ -1,1 +1,13 @@
-<p>bingo-board works!</p>
+<div class="bingo-board">
+    <div class="bingo-row" *ngFor="let row of tasks; let rowIndex = index">
+      <button
+        class="bingo-cell"
+        *ngFor="let task of row; let colIndex = index"
+        [ngStyle]="{'background-color': completedTasks[rowIndex][colIndex] ? selectedColor : ''}"
+        (click)="markTaskAsCompleted(rowIndex, colIndex)"
+      >
+        {{ task }}
+      </button>
+    </div>
+  </div>
+  
